@@ -2,6 +2,7 @@
 
 FROM ubuntu:22.04
 ARG DEBIAN_FRONTEND=noninteractive
+LABEL org.opencontainers.image.source https://github.com/muscle-fox/c-docker-build-toolbox
 
 # Add instructions to install autotools
 RUN apt-get update && apt-get install -y build-essential \
